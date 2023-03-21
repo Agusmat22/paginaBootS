@@ -41,7 +41,7 @@
 /* imagen principal */
 
 .imagenPricipal{
-    background-image: url(/img/paisaje-2.jpg);
+    background-image: url(img/paisaje-2.jpg);
     height: 45vw;
     background-position: center center;
     background-size: cover;
