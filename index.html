@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica de bootstrap</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+</head>
+<body>
+
+    <!-- barra de navegacion -->
+
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <!-- logo imagen -->
+            <img src="/img/logo-pagina.png" width="50"alt="logo logo-pagina">
+          </a>
+          <div class="collapse navbar-collapse" id="navbar-Toggler">
+            <ul class="navbar-nav  d-flex justify-content-center align-items-center ">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#paisajesImperdibles">Destinos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#formCont">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- imagen principal -->
+    <div class="container-fluid imagenPricipal">
+        <h3 class = "text-xs-center">Que esperas para viajar?</h3>
+    </div> 
+
+    <!-- paisajes principales -->
+    <div class="destinoImperdibles">
+      <h4 class="text-center fs-1">Destinos imperdibles</h4>
+    </div>
+    
+      <div class="contPaisajes row row-cols-1 row-cols-md-3 row-cols-sm-1 justify-content-center align-items-center #paisajesImperdibles" id="paisajesImperdibles">
+        <div class="col">
+          <div class="card">
+            <img src="img/paisaje-7 tierrafuego.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tierra del Fuego</h5>
+              <p class="card-text">En la isla grande de Tierra del Fuego se encuentra una de las 17 rutas naturales diseñadas para conocer la Argentina. Allí el mar, las montañas, los lagos, los glaciares, los bosques y la estepa.Gracias a su naturaleza
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/img/newyork.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">New York</h5>
+              <p class="card-text">Nueva York está considerada como una ciudad global, dadas sus influencias a nivel mundial en los medios de comunicación, en la política, en la educación, en el entretenimiento y la moda. La influencia artística.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/img/mountains.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Usuahia</h5>
+              <p class="card-text">Su paisaje es sencillamente bello. Lo justo, lo esencial y lo necesario para hacerlo inolvidable. En una pequeña porción de tierra lo tiene todo: mar, bosques, lagos, valles y montañas. A diferencia de otras localidades.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carrosel container-fluid">
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/img/groenlandia-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/groenlandia-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/img/groenlandia-3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <div class="textoCarrusel container d-flex flex-column flex-wrap">
+              <h4 class="display-3">El lugar mas exotico</h4>
+              <h5 class="fs-3">Groenlandia</h5>
+              <p class="lead fs-4">
+                Groenlandia es la isla más grande del mundo si Australia se considera un continente. Ubicado principalmente dentro del Círculo Polar Ártico, unas tres cuartas partes de su tierra están permanentemente cubiertas por una capa de hielo
+              </p>
+          </div>
+
+        </div>
+        
+        <div class="elegirnos container d-flex align-items-center flex-column justify-content-around">
+          <h4>¿Porque deberias elegirnos?</h4>
+          <p class="lead fs-4">Nuestros precios se ajustan a la calidad sobresaliente de los servicios que ofrecemos: estables, veloces y seguros; amplias características y beneficios; excelente soporte técnico y atención al cliente; etc. No somos uno de los proveedores de hosting más económicos del mercado, pero no hay que olvidar que "lo barato, sale caro".</p>
+        </div>
+
+        <div class="metodoPago container-fluid d-flex flex-column align-items-center justify-content-around gap-5">
+          <h4 >Metodos de pago</h4>
+          <div class="contenedorMetodo d-flex align-items-center justify-content-around">
+            <div class="container metodos d-flex flex-column align-items-center justify-content-center">
+              <img src="/img/mp.png" class="img-thumbnail" alt="...">
+              <p class="lead fs-4  fs-5-sm">Mercado Pago</p>
+            </div>
+            <div class="container metodos d-flex flex-column align-items-center justify-content-center">
+              <img src="/img/efectivo.png" class="img-thumbnail" alt="...">
+              <p class="lead fs-4  fs-5-sm">Mercado Pago</p>
+            </div>
+            <div class="container metodos d-flex flex-column align-items-center justify-content-center">
+              <img src="/img/tarjeta.jpg" class="img-thumbnail" alt="...">
+              <p class="lead fs-4  fs-5-sm">Mercado Pago</p>
+            </div>
+          </div>
+        </div>
+        
+
+    
+      </div>
+      <div class="contNosotros container d-flex flex-column text-center justify-content-center">
+        <h4 class="fs-1">Contactate con nosotros</h4>
+        <p class="lead fs-4">Mediante nuestro formulario podras los valores actualizado de los viajes e increibles promociones para que obtengas una experiencia inolvidable</p>
+      </div>
+
+    <div class="contFormulario container-fluid" id="formCont">
+
+      <div class="contactanos container">
+          <h4 class="fs-3 text-center">Formulario</h4>
+          
+        <form action="">
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
+            <label for="floatingInput">Nombre</label>
+          </div>
+          
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInputDisabled" placeholder="nombre@ejemplo.com">
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input class="form-control" type="number" placeholder="Dni" id="floatingTextarea" ></input>
+            <label for="floatingTextarea">Dni</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" ></textarea>
+            <label for="floatingTextarea2">Escriba su consulta</label>
+          </div>
+          
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn-primary" type="submit" onclick="enviarMensaje()">Enviar</button>
+            <script src="index.js"></script>
+          </div>
+        </form>
+      </div>
+        
+    </div>
+      
+      <footer class="d-flex align-items-center justify-content-end p-3">
+      <p>Derechos de autor AG</p>
+      </footer>
+      
+      <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+</body>
+</html>
